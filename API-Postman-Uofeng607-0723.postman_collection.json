@@ -1,0 +1,876 @@
+{
+	"info": {
+		"_postman_id": "915a0e21-b454-4eb4-88d8-b9e7ff71161b",
+		"name": "API-Postman-Uofeng607-0723",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "animals",
+			"item": [
+				{
+					"name": "get animals",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/animal",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"animal"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "post animal",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"animalID\": 2,\r\n\"species\":\"giraffe\",\r\n\"weight\": 50.4,\r\n\"cityTattoo\" : \"calgary001\",\r\n\"breed\" : \"tallbreed\",\r\n\"sex\": \"M\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/animal",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"animal"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put animals",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"animalID\": 2,\r\n\"species\":\"giraffe\",\r\n\"weight\": 50.4,\r\n\"cityTattoo\" : \"calgary001\",\r\n\"breed\" : \"tallbreed\",\r\n\"sex\": \"M\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/animal/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"animal",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete animals",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/animal/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"animal",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get animalstatus",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/animal/status/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"animal",
+								"status",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "post animalstatus",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"animalID\" : 5,\r\n\"description\" : \"today's update\",\r\n\"locations\":\"everywhere\",\r\n\"status\":\"feeling good\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/animal/status/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"animal",
+								"status",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "put animalstatus",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"animalID\" : 5,\r\n\"description\" : \"today's update\",\r\n\"locations\":\"everywhere\",\r\n\"status\":\"feeling good\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/animal/status/2?animalID=3&status=\"going on a trip\"",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"animal",
+								"status",
+								"2"
+							],
+							"query": [
+								{
+									"key": "animalID",
+									"value": "3"
+								},
+								{
+									"key": "status",
+									"value": "\"going on a trip\""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete animalstatus",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"animalID\" : 5,\r\n\"description\" : \"today's update\",\r\n\"locations\":\"everywhere\",\r\n\"status\":\"feeling good\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/animal/status",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"animal",
+								"status"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get examhistory",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/animal/examhistory",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"animal",
+								"examhistory"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "post examhistory",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"recordID\":1,\r\n\"measurement\":\"50Liters\",\r\n\"value\":50,\r\n\"user\": \"3\",\r\n\"animal\":1}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/animal/examhistory",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"animal",
+								"examhistory"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "put examhistory",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"recordID\":1,\r\n\"measurement\":\"50Liters\",\r\n\"value\":50,\r\n\"user\": \"3\",\r\n\"animal\":1}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/animal/examhistory/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"animal",
+								"examhistory",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete examhistory",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/animal/examhistory/4",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"animal",
+								"examhistory",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "get user",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/vetapplication723/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vetapplication723",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "post user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"user5\",\n    \"id\": 5,\n    \"type\": \"student\",\n    \"email\": \"student5@ucalgary.ca\",\n    \"activationDate\": \"2021-01-04\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/vetapplication723/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vetapplication723",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "put user",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"user0\",\n    \"id\": 0,\n    \"type\": \"teacher\",\n    \"email\": \"teacher0@ucalgary.ca\",\n    \"activationDate\": \"2021-07-04\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/vetapplication723/users/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vetapplication723",
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete user",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/vetapplication723/users/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vetapplication723",
+								"users",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "treatment",
+			"item": [
+				{
+					"name": "API_Comment_get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/Treatment_Comment",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"Treatment_Comment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "API_Comment_put",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"commentId\": 1,\r\n        \"userId\": 1,\r\n        \"animalId\": 1,\r\n        \"description\": \"Ciao\"\r\n }\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/Treatment_Comment",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"Treatment_Comment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "API_Comment_del",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/Treatment_Comment/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"Treatment_Comment",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "API_Comment_post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"commentId\": 5,\r\n        \"userId\": 5,\r\n        \"animalId\": 5,\r\n        \"description\": \"Konnichiwa\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/Treatment_Comment",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"Treatment_Comment"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "API_PrescriptionRecords_get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/Treatment_PrescriptionRecords",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"Treatment_PrescriptionRecords"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "API_PrescriptionRecords_post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"scriptRecord\": 3,\r\n        \"userId\": 3,\r\n        \"animalId\": 3,\r\n        \"date\": \"2021-11-30\",\r\n        \"instructions\": \"once dose per season\",\r\n        \"drugId\": \"ZTX3090\",\r\n        \"dosage\": \"10 mg\",\r\n        \"delivery_Method\": \"absorption\",\r\n        \"drug_Name\": \"the Liquid\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/Treatment_PrescriptionRecords",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"Treatment_PrescriptionRecords"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "API_PrescriptionRecords_put",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"scriptRecord\": 1,\r\n        \"userId\": 100,\r\n        \"animalId\": 100,\r\n        \"date\": \"2010-11-30\",\r\n        \"instructions\": \"twice dose per season\",\r\n        \"drugId\": \"ZTX4090\",\r\n        \"dosage\": \"5 mg\",\r\n        \"delivery_Method\": \"swallowing\",\r\n        \"drug_Name\": \"the Liquid\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/Treatment_PrescriptionRecords",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"Treatment_PrescriptionRecords"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "API_PrescriptionRecords_del",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/Treatment_PrescriptionRecords/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"Treatment_PrescriptionRecords",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "API_TreatmentMethod_get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/Treatment_TreatmentMethod",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"Treatment_TreatmentMethod"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "APT_TreatmentMethod_post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"treatment\":\"Dental cleaning\",\r\n    \"id\":5\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/Treatment_TreatmentMethod",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"Treatment_TreatmentMethod"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "API_TreatmentMethod_put",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"treatment\":\"Deworming\",\r\n    \"id\":2\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/Treatment_TreatmentMethod",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"Treatment_TreatmentMethod"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "API_TreatmentMethod_del",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/Treatment_TreatmentMethod/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"Treatment_TreatmentMethod",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "API_MedicalRecordType_get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/Treatment_MedicalRecordsType",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"Treatment_MedicalRecordsType"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "API_MedicalRecordType_post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"record\":\"INVOICE\",\r\n    \"id\":16\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/Treatment_MedicalRecordsType",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"Treatment_MedicalRecordsType"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "API_MedicalRecordType_put",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"record\":\"DX\",\r\n    \"id\":2\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/Treatment_MedicalRecordsType",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"Treatment_MedicalRecordsType"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "API_MedicalRecordType_del",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/Treatment_MedicalRecordsType/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"Treatment_MedicalRecordsType",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
